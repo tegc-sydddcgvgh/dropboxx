@@ -63,7 +63,7 @@ nav{
     max-width:500px;
     height: 50px; 
     border: 1px solid rgb(3, 110, 204);
-    border-radius: 2px;
+    border-radius: 7px;
     display: flex;
     align-items: center;
     justify-content: center;

